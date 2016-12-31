@@ -26,7 +26,7 @@ public class CategoryDaoImpl implements CategoryDao {
     }
 
     public Category getCategoryById(int id) {
-        return null;
+        return em.find(Category.class,id);
     }
 
     public Category createCategory(Category category) {
@@ -35,10 +35,11 @@ public class CategoryDaoImpl implements CategoryDao {
     }
 
     public void deleteCategory(Category category) {
+        em.remove(category);
 
     }
 
-    public Category updateCategory(Category category) {
-        return null;
+    public void updateCategory(Category category) {
+        em.merge(category);
     }
 }

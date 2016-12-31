@@ -1,6 +1,8 @@
 package com.rizomm.ecommerce.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 import static com.rizomm.ecommerce.model.Item.FIND_ALL;
 
@@ -8,14 +10,9 @@ import static com.rizomm.ecommerce.model.Item.FIND_ALL;
  * Created by LAMOOT Alexandre on 17/11/2016.
  */
 @Entity
-@Table(name = "article")
-@NamedQuery(name = FIND_ALL, query = "SELECT a FROM Item a JOIN a.category b")
+@Table(name = "Articles")
+@NamedQuery(name = "FIND_ALL", query = "SELECT a FROM Articles a JOIN a.category b")
 public class Item {
-
-    // ======================================
-    // =             Constants              =
-    // ======================================
-    public static final String FIND_ALL = "article.getAllArticles";
 
     // ======================================
     // =             Attributes             =
@@ -23,14 +20,16 @@ public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer idItem;
     private String name;
+    @NotNull
+    @Min(0)
     private double price;
     private String description;
     private String image;
     private Integer qte;
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "Category_id")
+    @JoinColumn(name = "idCategory")
     private Category category;
 
     public Item() {
@@ -44,12 +43,12 @@ public class Item {
         this.qte = qte;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getIdItem() {
+        return idItem;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setIdItem(Integer idItem) {
+        this.idItem = idItem;
     }
 
     public String getName() {
