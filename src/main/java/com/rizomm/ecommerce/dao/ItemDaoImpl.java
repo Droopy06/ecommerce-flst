@@ -38,7 +38,7 @@ public class ItemDaoImpl implements ItemDao {
     public List<Item> getArticlesByKeyWord(String keyWord) {
 
         Query req = em.createQuery("select p from Articles p where p.name like:x or p.description like :x");
-        req.setParameter("x","%+keyWord+%");
+        req.setParameter("x","%"+keyWord+"%");
         return req.getResultList();
     }
 
