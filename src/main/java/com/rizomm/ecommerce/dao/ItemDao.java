@@ -10,12 +10,12 @@ import java.util.List;
  */
 public interface ItemDao {
 
-    List<Item> getAllArticles();
-    List<Item> getArticlesByCategory(Category cat);
-    List<Item> getArticlesByKeyWord(String keyWord);
-    Item getArticleById(int id);
-    Item createArticle(Item item, Category cat);
-    void deleteArticle(Item item);
-    Item updateArticle(Item item);
+    List<Item> getAllItems();
+    List<Item> getItemsByCategory(Category cat);
+    List<Item> getItemsByKeyWord(String keyWord);
+    Item getItemById(int id);
+    Item createItem(Item item, Category cat);
+    void deleteItem(Item item);
+    Item updateItem(Item item);
 
 }

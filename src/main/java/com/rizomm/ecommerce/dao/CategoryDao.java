@@ -13,5 +13,5 @@ public interface CategoryDao {
      Category getCategoryById(int id);
      Category createCategory(Category category);
      void deleteCategory(Category category);
-     void updateCategory(Category category);
+     Category updateCategory(Category category);
 }

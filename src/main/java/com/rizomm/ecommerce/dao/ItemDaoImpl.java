@@ -23,47 +23,47 @@ public class ItemDaoImpl implements ItemDao {
     @PersistenceContext(unitName = "ecommercePU")
     protected EntityManager em;
 
-    public List<Item> getAllArticles() {
+    public List<Item> getAllItems() {
         TypedQuery<Item> query = em.createNamedQuery(FIND_ALL, Item.class);
         em.joinTransaction();
         return query.getResultList();
     }
 
-    public List<Item> getArticlesByCategory(Category cat) {
+    public List<Item> getItemsByCategory(Category cat) {
         Query req = em.createQuery("select p from Articles p where p.category.id =:x");
         req.setParameter("x",cat.getId());
         return req.getResultList();
     }
 
-    public List<Item> getArticlesByKeyWord(String keyWord) {
+    public List<Item> getItemsByKeyWord(String keyWord) {
 
         Query req = em.createQuery("select p from Articles p where p.name like:x or p.description like :x");
         req.setParameter("x","%"+keyWord+"%");
         return req.getResultList();
     }
 
-    public Item getArticleById(int id) {
+    public Item getItemById(int id) {
         return em.find(Item.class, id);
     }
 
-    public Item createArticle(Item item, Category cat) {
+    public Item createItem(Item item, Category cat) {
         item.setCategory(cat);
         em.persist(item);
         return item;
     }
 
-    public Item createArticle(Item item) {
+    public Item createItem(Item item) {
         em.persist(item);
         return item;
     }
 
-    public void deleteArticle(Item item)
+    public void deleteItem(Item item)
     {
         em.remove(em.merge(item));
     }
 
-    public Item updateArticle(Item item) {
+    public Item updateItem(Item item) {
         em.merge(item);
-        return getArticleById(item.getIdItem());
+        return getItemById(item.getIdItem());
     }
 }

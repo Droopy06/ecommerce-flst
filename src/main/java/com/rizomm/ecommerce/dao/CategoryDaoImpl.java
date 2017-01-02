@@ -39,7 +39,7 @@ public class CategoryDaoImpl implements CategoryDao {
 
     }
 
-    public void updateCategory(Category category) {
-        em.merge(category);
+    public Category updateCategory(Category category) {
+       return em.merge(category);
     }
 }
