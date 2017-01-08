@@ -3,6 +3,7 @@ package com.rizomm.ecommerce.dao;
 import com.rizomm.ecommerce.model.Customer;
 import com.rizomm.ecommerce.model.Order;
 import com.rizomm.ecommerce.model.OrderLine;
+import com.rizomm.ecommerce.service.Panier;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;

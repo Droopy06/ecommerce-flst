@@ -24,20 +24,20 @@ public class ItemDaoImpl implements ItemDao {
     protected EntityManager em;
 
     public List<Item> getAllItems() {
-        TypedQuery<Item> query = em.createNamedQuery(FIND_ALL, Item.class);
+        TypedQuery<Item> query = em.createQuery("select p from Item p",Item.class);
         em.joinTransaction();
         return query.getResultList();
     }
 
     public List<Item> getItemsByCategory(Category cat) {
-        Query req = em.createQuery("select p from Articles p where p.category.id =:x");
+        Query req = em.createQuery("select p from Item p where p.category.id =:x");
         req.setParameter("x",cat.getId());
         return req.getResultList();
     }
 
     public List<Item> getItemsByKeyWord(String keyWord) {
 
-        Query req = em.createQuery("select p from Articles p where p.name like:x or p.description like :x");
+        Query req = em.createQuery("select p from Item p where p.name like:x or p.description like :x");
         req.setParameter("x","%"+keyWord+"%");
         return req.getResultList();
     }
@@ -62,8 +62,7 @@ public class ItemDaoImpl implements ItemDao {
         em.remove(em.merge(item));
     }
 
-    public Item updateItem(Item item) {
+    public void updateItem(Item item) {
         em.merge(item);
-        return getItemById(item.getIdItem());
     }
 }

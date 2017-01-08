@@ -11,7 +11,7 @@ public class OrderLine {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idOrderLine;
-    private int quantity;
+    private Long quantity;
     private double price;
     @ManyToOne
     @JoinColumn(name = "idItem")
@@ -20,7 +20,7 @@ public class OrderLine {
     public OrderLine() {
     }
 
-    public OrderLine(int quantity, double price, Item item) {
+    public OrderLine(long quantity, double price, Item item) {
         this.quantity = quantity;
         this.price = price;
         this.item = item;
@@ -34,11 +34,11 @@ public class OrderLine {
         this.idOrderLine = idOrderLine;
     }
 
-    public int getQuantity() {
+    public Long getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(Long quantity) {
         this.quantity = quantity;
     }
 

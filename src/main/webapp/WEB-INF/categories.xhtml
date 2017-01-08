@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:h = "http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>
+        <ui:insert name="title"> Admin Category</ui:insert>
+        <h:outputStylesheet library="default" name="css/form.css"  />
+    </title>
+</h:head>
+<h:body>
+    <f:form>
+        <fieldset>
+            <legend> SAVE CATEGORY</legend>
+            <h:outputLabel for="name"> Name <span class="requis">*</span></h:outputLabel>
+            <h:inputText id="name_cat" value="#{CategoryController.categorie.name}" required="true"></h:inputText>
+            <h:outputLabel for="description"> Description <span class="requis">*</span></h:outputLabel>
+            <h:inputText id="description_cat" value="#{CategoryController.categorie.description}" required="true"></h:inputText>
+            <h:outputLabel for="Family"> Family </h:outputLabel>
+            <h:inputText id="family-cat" value="#{CategoryController.categorie.family}"></h:inputText>
+            <h:commandButton action="#{CategoryController.saveCategory}"> Valider </h:commandButton>
+        </fieldset>
+    </f:form>
+    <div>
+        <table>
+            <tr>
+                <th> ID </th> <th> Name </th> <th> Family </th>
+                <f:forEach cate = "#{CategoryController.GetAllCat}" var="cat" >
+                    <tr>
+                        <td> #{cat.id}</td>
+                        <td> #{cat.name}</td>
+                        <td> #{cat.description}</td>
+                        <td> #{cat.family}</td>
+                    </tr>
+
+                </f:forEach>
+            </tr>
+        </table>
+
+    </div>
+
+
+</h:body>
+
+</html>

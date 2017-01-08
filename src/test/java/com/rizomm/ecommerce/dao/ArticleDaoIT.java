@@ -15,20 +15,20 @@ import static org.junit.Assert.assertNotNull;
 public class ArticleDaoIT {
 
     @Test
-    public void createBooks() throws Exception{
-        Item item = new Item("product 1",15.57,"Description of pruduct 1","product1.png",5);
+    public void createItem() throws Exception{
+        Item item = new Item("designationProd1","Description Produit1",100L,1800D);
         Category category = new Category("category 1","Description of category 1","family 1");
         item.setCategory(category);
         ItemDaoImpl articleDao = new ItemDaoImpl();
         articleDao.em = Persistence.createEntityManagerFactory("ecommercePU").createEntityManager();
-        assertNotNull(articleDao.createArticle(item));
-        assertEquals(1,articleDao.getAllArticles().size());
+        assertNotNull(articleDao.createItem(item));
+        assertEquals(1,articleDao.getAllItems().size());
     }
 
     @Test
-    public void getAllBooks() throws Exception{
+    public void getAllItemss() throws Exception{
         ItemDaoImpl articleDao = new ItemDaoImpl();
         articleDao.em = Persistence.createEntityManagerFactory("ecommercePU").createEntityManager();
-        assertNotNull(articleDao.getAllArticles());
+        assertNotNull(articleDao.getAllItems());
     }
 }

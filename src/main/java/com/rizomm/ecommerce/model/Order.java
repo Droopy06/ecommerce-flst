@@ -8,7 +8,7 @@ import java.util.List;
  * Created by LAMOOT Alexandre on 17/11/2016.
  */
 @Entity
-@Table(name = "Commandes")
+//@Table(name = "Commandes")
 public class Order {
     @Id
     @GeneratedValue

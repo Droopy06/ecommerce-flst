@@ -16,6 +16,6 @@ public interface ItemDao {
     Item getItemById(int id);
     Item createItem(Item item, Category cat);
     void deleteItem(Item item);
-    Item updateItem(Item item);
+    void updateItem(Item item);
 
 }
