@@ -21,7 +21,7 @@
     </properties>
   </persistence-unit>
 
-  <persistence-unit name="ecommerce2PU" transaction-type="JTA">
+ <!-- <persistence-unit name="ecommerce2PU" transaction-type="JTA">
     <jta-data-source>jdbc/__default</jta-data-source>
     <class>com.rizomm.ecommerce.model.Category</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
@@ -29,6 +29,6 @@
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
       <property name="eclipselink.logging.level" value="INFO"/>
     </properties>
-  </persistence-unit>
+  </persistence-unit>-->
 
 </persistence>        
