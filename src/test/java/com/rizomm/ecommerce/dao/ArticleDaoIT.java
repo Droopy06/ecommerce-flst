@@ -26,7 +26,7 @@ public class ArticleDaoIT {
     }
 
     @Test
-    public void getAllItemss() throws Exception{
+    public void getAllItems() throws Exception{
         ItemDaoImpl articleDao = new ItemDaoImpl();
         articleDao.em = Persistence.createEntityManagerFactory("ecommercePU").createEntityManager();
         assertNotNull(articleDao.getAllItems());

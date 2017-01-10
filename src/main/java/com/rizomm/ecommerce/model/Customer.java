@@ -17,8 +17,8 @@ public class Customer {
     private String adress;
     private String mail;
     private String phoneNumer;
-    @OneToMany(mappedBy = "idClient")
-    private List<Order> order;
+   /* @OneToMany(mappedBy = "idClient")
+    private List<Order> order;*/
 
     public Customer() {
     }
@@ -78,11 +78,11 @@ public class Customer {
         this.adress = adress;
     }
 
-    public List<Order> getOrder() {
+    /*public List<Order> getOrder() {
         return order;
     }
 
     public void setOrder(List<Order> order) {
         this.order = order;
-    }
+    }*/
 }

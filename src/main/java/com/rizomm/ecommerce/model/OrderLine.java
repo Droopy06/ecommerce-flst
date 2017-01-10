@@ -5,8 +5,8 @@ import javax.persistence.*;
 /**
  * Created by ISEN on 15/12/2016.
  */
-@Entity
-@Table(name = "LigneCommandes")
+/*@Entity
+@Table(name = "LigneCommandes")*/
 public class OrderLine {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

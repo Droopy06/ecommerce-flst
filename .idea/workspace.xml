@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9afc2ab5-eb39-4c04-afad-4d5a7ab99052" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecommerce.iml" afterPath="$PROJECT_DIR$/ecommerce.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/Controller/ItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/Controller/ItemController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Customer.java" afterPath="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Customer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Order.java" afterPath="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/OrderLine.java" afterPath="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/OrderLine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/model/ArticleModelIT.java" afterPath="$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/model/ArticleModelIT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/dao/ArticleDaoIT.java" afterPath="$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/dao/ArticleDaoIT.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" />
     </list>
     <ignored path="ecommerce.iws" />
@@ -35,32 +34,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="12" selection-end-column="61" />
-              <folding />
+            <state relative-caret-position="154">
+              <caret line="157" column="20" lean-forward="true" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+              <folding>
+                <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+                <marker date="1484063143690" expanded="false" signature="7107:7577" ph="..." />
+                <marker date="1484063143690" expanded="false" signature="7229:7484" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="86">
+              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="28" />
+              <folding>
+                <element signature="e#1081#1082#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1202#1203#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,38 +68,31 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/OrderLine.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="31" />
+              <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default_mapping.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/default_mapping.xml">
+      <file leaf-file-name="OrderDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/OrderDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="242">
+              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Item.java">
+      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="327">
+              <caret line="80" column="6" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="86" selection-end-column="7" />
+              <folding>
+                <marker date="1484062178467" expanded="false" signature="1671:1682" ph=" { " />
+                <marker date="1484062178467" expanded="false" signature="1701:1707" ph=" }" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,8 +100,50 @@
       <file leaf-file-name="ArticleModelIT.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/model/ArticleModelIT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleDaoIT.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/dao/ArticleDaoIT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+              <folding>
+                <marker date="1484062331385" expanded="true" signature="1152:1163" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/ItemDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -165,10 +199,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/Panier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/ItemDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/ItemDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/OrderDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/OrderDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/service/Panier.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/dao/ArticleDaoIT.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/Categorie.xhtml.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/Controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/Controller/CustomerController.java" />
@@ -180,11 +212,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/api/CategoryRestService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Category.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/OrderDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/OrderLine.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/OrderLine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Order.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/dao/ArticleDaoIT.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -584,59 +618,7 @@
       <recent name="C:\Users\prog\Documents\GitHub\ecommerce-flst\src\main\java\com\rizomm\ecommerce\model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArticleModelIT">
-    <configuration default="false" name="CategoryDaoIT.getAllCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.rizomm.ecommerce.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ecommerce" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.rizomm.ecommerce.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rizomm.ecommerce.dao.CategoryDaoIT" />
-      <option name="METHOD_NAME" value="getAllCategories" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CategoryDaoIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.rizomm.ecommerce.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ecommerce" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.rizomm.ecommerce.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rizomm.ecommerce.dao.CategoryDaoIT" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ArticleDaoIT.getAllItems">
     <configuration default="false" name="ArticleDaoIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -703,6 +685,58 @@
       <option name="MAIN_CLASS_NAME" value="com.rizomm.ecommerce.model.ArticleModelIT" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArticleModelIT.shouldFindACustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.rizomm.ecommerce.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ecommerce" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.rizomm.ecommerce.model" />
+      <option name="MAIN_CLASS_NAME" value="com.rizomm.ecommerce.model.ArticleModelIT" />
+      <option name="METHOD_NAME" value="shouldFindACustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArticleDaoIT.getAllItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.rizomm.ecommerce.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ecommerce" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.rizomm.ecommerce.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.rizomm.ecommerce.dao.ArticleDaoIT" />
+      <option name="METHOD_NAME" value="getAllItems" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1196,19 +1230,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CategoryDaoIT.getAllCategories" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CategoryDaoIT" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ArticleDaoIT" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ArticleDaoIT.createItem" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ArticleModelIT" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ArticleDaoIT" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ArticleDaoIT.createItem" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ArticleModelIT" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ArticleModelIT.shouldFindACustomer" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ArticleDaoIT.getAllItems" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ArticleModelIT" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ArticleDaoIT.getAllItems" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.ArticleDaoIT" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ArticleDaoIT.createItem" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CategoryDaoIT.getAllCategories" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CategoryDaoIT" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ArticleModelIT.shouldFindACustomer" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ArticleModelIT" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ArticleDaoIT.createItem" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1263,26 +1297,44 @@
       <workItem from="1483900111775" duration="36000" />
       <workItem from="1483967412235" duration="4489000" />
       <workItem from="1483975650140" duration="956000" />
-      <workItem from="1484051571991" duration="2154000" />
+      <workItem from="1484051571991" duration="4045000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArticleModelIT - 2017.01.09 at 15h 20m 08s.xml">
+    <history-entry file="ArticleDaoIT - 2017.01.10 at 16h 31m 13s.xml">
+      <configuration name="ArticleDaoIT" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleDaoIT_getAllItems - 2017.01.10 at 16h 32m 19s.xml">
+      <configuration name="ArticleDaoIT.getAllItems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleModelIT - 2017.01.10 at 16h 23m 31s.xml">
       <configuration name="ArticleModelIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArticleModelIT - 2017.01.09 at 16h 33m 18s.xml">
+    <history-entry file="ArticleModelIT - 2017.01.10 at 16h 25m 50s.xml">
       <configuration name="ArticleModelIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArticleModelIT - 2017.01.10 at 16h 05m 18s.xml">
+    <history-entry file="ArticleModelIT - 2017.01.10 at 16h 27m 39s.xml">
       <configuration name="ArticleModelIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArticleModelIT - 2017.01.10 at 16h 05m 59s.xml">
+    <history-entry file="ArticleModelIT - 2017.01.10 at 16h 28m 06s.xml">
       <configuration name="ArticleModelIT" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleModelIT - 2017.01.10 at 16h 28m 43s.xml">
+      <configuration name="ArticleModelIT" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleModelIT - 2017.01.10 at 16h 28m 58s.xml">
+      <configuration name="ArticleModelIT" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleModelIT - 2017.01.10 at 16h 29m 55s.xml">
+      <configuration name="ArticleModelIT" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleModelIT_shouldFindACustomer - 2017.01.10 at 16h 30m 34s.xml">
+      <configuration name="ArticleModelIT.shouldFindACustomer" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66411000" />
+    <option name="totallyTimeSpent" value="68302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1309,7 +1361,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1381,13 +1433,19 @@
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Order.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/model/ArticleModelIT.java</url>
+          <line>21</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/dao/ArticleDaoIT.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1396,14 +1454,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/OrderLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1416,7 +1466,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1448,7 +1503,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1535,25 +1595,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/OrderDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Categorie.xhtml.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Articles.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/ItemDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="66" column="1" lean-forward="false" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-          <folding>
-            <element signature="e#1722#1723#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/Controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1626,16 +1669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/dao/ArticleDaoIT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="81" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="81" />
-          <folding>
-            <marker date="1483967209081" expanded="true" signature="1153:1164" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/service/ItemServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1664,14 +1697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/default_mapping.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/derby.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1680,55 +1705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Category.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/default_mapping.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1431">
-          <caret line="147" column="20" lean-forward="true" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
-          <folding>
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <marker date="1484060327136" expanded="false" signature="7060:7530" ph="..." />
-            <marker date="1484060327136" expanded="false" signature="7182:7437" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/model/ArticleModelIT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="12" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/OrderLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1741,11 +1721,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/OrderDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="86">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/OrderLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="80" column="6" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="86" selection-end-column="7" />
+          <folding>
+            <marker date="1484062178467" expanded="false" signature="1671:1682" ph=" { " />
+            <marker date="1484062178467" expanded="false" signature="1701:1707" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/model/ArticleModelIT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/rizomm/ecommerce/dao/ArticleDaoIT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding>
+            <marker date="1484062331385" expanded="true" signature="1152:1163" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rizomm/ecommerce/dao/ItemDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="157" column="20" lean-forward="true" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+          <folding>
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <marker date="1484063143690" expanded="false" signature="7107:7577" ph="..." />
+            <marker date="1484063143690" expanded="false" signature="7229:7484" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

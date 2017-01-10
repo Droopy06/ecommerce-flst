@@ -7,12 +7,13 @@ import java.util.List;
 /**
  * Created by LAMOOT Alexandre on 17/11/2016.
  */
-@Entity
-@Table(name = "Commandes")
+/*@Entity
+@Table(name = "Commandes")*/
 public class Order {
     @Id
     @GeneratedValue
     private Long idOrder;
+    @Temporal(TemporalType.DATE)
     private Date OrderDate;
     @OneToMany(mappedBy = "idOrder")
     private List<OrderLine> items;
