@@ -3,7 +3,7 @@ package com.rizomm.ecommerce.dao;
 import com.rizomm.ecommerce.model.Customer;
 import com.rizomm.ecommerce.model.Order;
 import com.rizomm.ecommerce.model.OrderLine;
-import com.rizomm.ecommerce.service.Panier;
+import com.rizomm.ecommerce.service.PanierServiceImpl;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
@@ -20,7 +20,7 @@ public class OrderDaoImpl implements OrderDao {
     @PersistenceContext(unitName = "ecommercePU")
     protected EntityManager em;
 
-    public Order saveOrder(Panier p, Customer client){
+    public Order saveOrder(PanierServiceImpl p, Customer client){
     em.persist(client);
         Order cmd = new Order();
         cmd.setOrderDate(new Date());

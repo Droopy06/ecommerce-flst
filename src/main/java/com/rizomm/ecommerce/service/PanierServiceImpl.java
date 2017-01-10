@@ -14,27 +14,24 @@ import java.util.List;
  */
 @Stateful
 @Remote
-public class Panier implements Serializable {
+public class PanierServiceImpl implements PanierService,Serializable {
     private List<OrderLine> items = new ArrayList<OrderLine>();
-    public void addArticle(Item it)
-    {
+    public void addItem(Item it) {
         if(items.size()> 0) {
-            for (OrderLine lc:items)
-                if (lc.getItem() == it)
-                {
-                    lc.setQuantity(lc.getQuantity()+1);
-                    lc.setPrice(lc.getPrice()+it.getPrice());
-                    return;
+            for (OrderLine lc:items) {
+                if (lc.getItem().getIdItem().equals(it.getIdItem())) {
+                    lc.setQuantity(lc.getQuantity() + 1);
+                    lc.setPrice(lc.getPrice() + it.getPrice());
+                    break;
                 }
-        }
-            OrderLine lc = new OrderLine();
-            lc.setItem(it);
-            lc.setQuantity(it.getQuantity());
-            lc.setPrice(it.getPrice());
-             items.add(lc);
-
             }
-
+        }
+        OrderLine lc = new OrderLine();
+        lc.setItem(it);
+        lc.setQuantity(it.getQuantity());
+        lc.setPrice(it.getPrice());
+        items.add(lc);
+    }
     public List<OrderLine> getItems(){
         return items;
 
@@ -50,10 +47,10 @@ public class Panier implements Serializable {
     public int getSize(){
         return items.size();
     }
-    public void delete(OrderLine lgncmd){
-        items.remove(lgncmd);
+    public void delete(OrderLine orderLine){
+        items.remove(orderLine);
     }
-    public void viderPanier(){
+    public void clearPannier(){
         items.clear();
     }
 }
