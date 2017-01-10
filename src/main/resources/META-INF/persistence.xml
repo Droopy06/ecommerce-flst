@@ -10,6 +10,7 @@
     <class>com.rizomm.ecommerce.model.Item</class>
     <class>com.rizomm.ecommerce.model.Category</class>
     <class>com.rizomm.ecommerce.model.Order</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
       <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
@@ -21,6 +22,7 @@
   <persistence-unit name="ecommerce2PU" transaction-type="JTA">
     <jta-data-source>jdbc/__default</jta-data-source>
     <class>com.rizomm.ecommerce.model.Category</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
       <property name="eclipselink.logging.level" value="INFO"/>

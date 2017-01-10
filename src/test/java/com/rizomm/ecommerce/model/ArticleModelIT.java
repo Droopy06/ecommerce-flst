@@ -11,7 +11,7 @@ public class ArticleModelIT extends AbstractPersistentTest  {
 
     @Test
     public void shouldFindACustomer() throws Exception{
-        Item item = new Item("product 1",15.57,"Description of pruduct 1","product1.png",5);
+        Item item = new Item("designationProd1","Description Produit1",100L,1800D);
         Category category = new Category("category 1","Description of category 1","family 1");
         item.setCategory(category);
         tx.begin();
@@ -19,12 +19,12 @@ public class ArticleModelIT extends AbstractPersistentTest  {
         em.persist(category);
         tx.commit();
 
-        assertNotNull(item.getId());
+        assertNotNull(item.getIdItem());
         assertNotNull(category.getId());
         // Clear
         em.clear();
 
-        item = em.find(Item.class, item.getId());
+        item = em.find(Item.class, item.getIdItem());
         assertNotNull(item);
     }
 }
