@@ -2,6 +2,7 @@ package com.rizomm.ecommerce.dao;
 
 import com.rizomm.ecommerce.model.Category;
 import javax.ejb.Local;
+import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -12,7 +13,7 @@ import static com.rizomm.ecommerce.model.Category.FIND_ALL_CATEGORIES;
 /**
  * Created by LAMOOT Alexandre on 17/11/2016.
  */
-@Local
+@Remote
 @Stateless
 public class CategoryDaoImpl implements CategoryDao {
 
