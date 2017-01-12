@@ -49,4 +49,20 @@ public class CategoryRestServiceIT {
         assertEquals(Response.Status.NOT_FOUND.getStatusCode(), response.getStatus());
 
     }
+
+    @Test
+    public void shouldNotCreateANullCategory() throws JAXBException {
+
+        // POSTs a Null Book
+        Response response = client.target(uri).request().post(Entity.entity(null, MediaType.APPLICATION_JSON));
+        assertEquals(Response.Status.BAD_REQUEST.getStatusCode(), response.getStatus());
+    }
+
+    @Test
+    public void shouldNotFindTheCategoryID() throws JAXBException {
+
+        // GETs a Book with an unknown ID
+        Response response = client.target(uri).path("invalidID").request().get();
+        assertEquals(Response.Status.NOT_FOUND.getStatusCode(), response.getStatus());
+    }
 }
