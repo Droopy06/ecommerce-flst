@@ -10,7 +10,6 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.List;
-import static com.rizomm.ecommerce.model.Item.*;
 
 
 /**
@@ -46,7 +45,7 @@ public class ItemDaoImpl implements ItemDao {
         return em.find(Item.class, id);
     }
 
-    public Item createItem(Item item, Category cat) {
+    public Item createItem(Item item,Category cat) {
         item.setCategory(cat);
         em.persist(item);
         return item;

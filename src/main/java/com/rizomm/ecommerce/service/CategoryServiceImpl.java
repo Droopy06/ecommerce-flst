@@ -16,7 +16,7 @@ import java.util.List;
 public class CategoryServiceImpl implements CategoryService {
 
     @Inject
-    CategoryDao categoryDao;
+    private CategoryDao categoryDao;
 
     public List<Category> getAllService() {
         return categoryDao.getAllCategories();

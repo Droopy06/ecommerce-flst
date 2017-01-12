@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface ItemService {
     List<Item> getAllService();
-    void saveArticle(Item item);
-    void deleteArticle(Item item);
+    Item getItemById(int id);
+    Item saveItem(Item item);
+    Item updateItem(Item item);
+    void deleteArticle(int id);
 }

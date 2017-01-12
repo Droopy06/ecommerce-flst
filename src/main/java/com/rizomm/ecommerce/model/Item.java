@@ -14,6 +14,7 @@ public class Item {
     private Long idItem;
     private String designation;
     private String description;
+    private String picture;
     private Long quantity;
     @NotNull
     @Min(value = 0)
@@ -28,6 +29,14 @@ public class Item {
     public Item(String designation, String description, Long quantity, Double price) {
         this.designation = designation;
         this.description = description;
+        this.quantity = quantity;
+        this.price = price;
+    }
+
+    public Item(String designation, String description, String picture, Long quantity, Double price) {
+        this.designation = designation;
+        this.description = description;
+        this.picture = picture;
         this.quantity = quantity;
         this.price = price;
     }
@@ -54,6 +63,14 @@ public class Item {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
     }
 
     public Long getQuantity() {

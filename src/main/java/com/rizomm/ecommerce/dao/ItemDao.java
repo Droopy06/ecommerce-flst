@@ -15,6 +15,7 @@ public interface ItemDao {
     List<Item> getItemsByKeyWord(String keyWord);
     Item getItemById(int id);
     Item createItem(Item item, Category cat);
+    Item createItem(Item item);
     void deleteItem(Item item);
     void updateItem(Item item);
 
