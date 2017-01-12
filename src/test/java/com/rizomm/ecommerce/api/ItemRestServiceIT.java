@@ -22,7 +22,7 @@ public class ItemRestServiceIT {
     private static Client client = ClientBuilder.newClient();
 
     @Test
-    public void shouldCreateAndDeleteABook() throws JAXBException {
+    public void shouldCreateAndDeleteAItem() throws JAXBException {
 
         Item item = new Item("clef usb","clef usb 4 GO","usb.png",10L,13.25);
 

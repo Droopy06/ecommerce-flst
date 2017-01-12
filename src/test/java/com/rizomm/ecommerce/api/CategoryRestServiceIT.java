@@ -23,7 +23,7 @@ public class CategoryRestServiceIT {
     private static Client client = ClientBuilder.newClient();
 
     @Test
-    public void shouldCreateAndDeleteABook() throws JAXBException {
+    public void shouldCreateAndDeleteACategory() throws JAXBException {
 
         Category category = new Category("categorie 1","this is 1st category","");
 
