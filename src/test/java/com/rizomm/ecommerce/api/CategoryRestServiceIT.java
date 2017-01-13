@@ -19,7 +19,7 @@ import static org.junit.Assert.assertEquals;
  * Created by Lamoot Alexandre on 12/01/2017.
  */
 public class CategoryRestServiceIT {
-    private static URI uri = UriBuilder.fromUri("http://localhost/ecommerce-1.0/ecommerce/category").port(8080).build();
+    private static URI uri = UriBuilder.fromUri("http://localhost/ecommerce-1.0/ecommerce/rest/category").port(8080).build();
     private static Client client = ClientBuilder.newClient();
 
     @Test
